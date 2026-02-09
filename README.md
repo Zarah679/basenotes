@@ -1,16 +1,37 @@
-# React + Vite
+# BaseNotes 📝
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+BaseNotes is a clean, responsive Notes App built with React + Tailwind CSS.  
+This project is an intentional upgrade from my earlier Todo App — adding deeper CRUD logic, improved UI hierarchy, and persistence.
 
-Currently, two official plugins are available:
+## ✨ Features
+- Create, edit, and delete notes (CRUD)
+- Persist notes using `localStorage` (synced via `useEffect`)
+- Responsive card-based layout with clear typography and spacing
+- Per-note actions (edit/delete)
+- Empty state when there are no notes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Upgrade From My Todo App (What I Practiced Here)
+- Moving from simple list state → **structured note objects**
+- **Immutability** and controlled updates during edit flows
+- Reusing one form for **create vs edit**
+- Persisting UI state with `useEffect` + `localStorage`
+- Styling and layout improvements using Tailwind utility classes
 
-## React Compiler
+## 🖼 Screenshots
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+> Create a folder named `screenshots` in the project root and add your images there.
 
-## Expanding the ESLint configuration
+![BaseNotes UI](./screenshots/basenotes.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠 Tech Stack
+- React
+- JavaScript
+- Tailwind CSS
+- Vite (if you used Vite)
+
+## 📦 Getting Started
+
+### 1) Clone the repo
+```bash
+git clone https://github.com/Zarah679/basenotes.git
+cd basenotes
